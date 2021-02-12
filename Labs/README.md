@@ -12,6 +12,12 @@ Sie arbeiten die Labs selbstständig durch. Alle Labs beinhalten Fragen, die Sie
 -   [Lab 3: Nmap SYN- und Connect-Scan](Nmap%20SYN%20Connect%20Scan/)
 -   [Lab 4: Nmap Service Detection](Nmap%20Service%20Detection/)
 
+## HE2: LAN Security
+
+-   [Lab 5: Nmap Host Dicovery](Nmap%20Host%20Discovery/)
+-   [Lab 6: ARP-Tabelle](ARP%20Tabelle/)
+-   [Lab 7: ARP-Poisoning-Attacke](ARP%20Poisoning%20Attacke/)
+
 ## Bewertung, Benotung und Abgabedatum
 
 Alle Labs müssen bis spätestens zwei Wochen nach dem letzten Vorlesungsabend (HE6) abgegeben werden. Empfehlenswert ist eine Vorlesungszeitnahe Abgabe.
