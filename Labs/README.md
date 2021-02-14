@@ -24,6 +24,12 @@ Sie arbeiten die Labs selbstständig durch. Alle Labs beinhalten Fragen, die Sie
 -   [Lab 9: SHA1 Shattered](SHA1%20Shattered/)
 -   [Lab 10: GPG Verify](GPG%20Verify/)
 
+## HE4: TLS & Internet PKI
+
+-   [Lab 11: TLS Client](TLS%20Client/)
+-   [Lab 12: TLS Decryption](TLS%20Decryption/)
+-   [Lab 13: Lokale Certificate Authority](Lokale%20Certificate%20Authority/)
+
 ## Bewertung, Benotung und Abgabedatum
 
 Alle Labs müssen bis spätestens zwei Wochen nach dem letzten Vorlesungsabend (HE6) abgegeben werden. Empfehlenswert ist eine Vorlesungszeitnahe Abgabe.
