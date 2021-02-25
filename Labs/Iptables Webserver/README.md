@@ -6,7 +6,7 @@
 
 ## Voraussetzung & Vorbereitung
 
--   Kali Linux
+-   Kali Linux mit Network Bridge Adapter Modus
 
 ## Aufgabe
 
