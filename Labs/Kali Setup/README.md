@@ -15,9 +15,13 @@
 
 2.  Folgen Sie der Installationsanleitung [hier](https://github.com/Hacking-Lab/hl-livecd/blob/master/guides/install-livecd-de.md) und deployen Sie das Live System (ca. 20 GB).
 
-3.  Lesen Sie die Datei `livecd.(pdf|md)` auf dem Desktop.
+3.  Stellen Sie die Netzwerkeinstellung Ihres Netzwerkadapters von `NAT` auf `Bridged Adapter` um, sodass Sie im Kali Linux Gastsystem eine IP Adresse Ihres lokalen DHCP Server erhalten.
 
-4.  Machen Sie sich mit der Live Linux Distribution vertraut, stöbern Sie etwas rum.
+![Netzwerk Adapter Bridged](img/Virtualbox-Network-Bridge-Adapter-Setting.png)
+
+4.  Lesen Sie die Datei `livecd.(pdf|md)` auf dem Desktop.
+
+5.  Machen Sie sich mit der Live Linux Distribution vertraut, stöbern Sie etwas rum.
 
 ## Fragen
 
