@@ -33,6 +33,7 @@ Das Ergebnis könnte ungefähr so aussehen:
 
 2.  Wiederholen Sie obigen Befehl dieses Mal mit privilegierten Rechten: `sudo nmap scanme.nmap.org -sV`. Das Ergebnis könnte ungefähr so aussehen:
 
+
     sudo nmap scanme.nmap.org -sV
     Starting Nmap 7.91 ( <https://nmap.org> ) at 2021-02-06 22:20 CET
     Nmap scan report for scanme.nmap.org (45.33.32.156)
