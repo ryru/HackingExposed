@@ -1,4 +1,4 @@
-# Lab: Nmap Basics
+# Lab: Nmap Host Discovery
 
 -   Zeitaufwand:        ⏱️
 -   Schwierigkeitsgrad: 🌶️🌶️
