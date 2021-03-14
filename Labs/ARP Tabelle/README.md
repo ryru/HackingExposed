@@ -55,7 +55,7 @@ Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse
 
 ![ARP Broadcast Request](img/wireshark-arp-icmp-echo-request.png)
 
-Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse:
+Der Befehl `arp -n` zeigt nun einen neuen Eintrag für diese IP Adresse:
 
     arp -n
     Address                  HWtype  HWaddress           Flags Mask            Iface
