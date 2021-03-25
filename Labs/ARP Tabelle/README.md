@@ -21,15 +21,14 @@
 
 3.  Im Terminal setzen Sie nun einen Ping auf einen Host in Ihrem lokalen Netzwerk, den es garantiert nicht gibt mit `ping -c 3 192.168.105.234` ab.
 
+        ping -c 3 192.168.105.234
+        PING 192.168.105.234 (192.168.105.234) 56(84) bytes of data.
+        From 192.168.105.125 icmp_seq=1 Destination Host Unreachable
+        From 192.168.105.125 icmp_seq=2 Destination Host Unreachable
+        From 192.168.105.125 icmp_seq=3 Destination Host Unreachable
 
-    ping -c 3 192.168.105.234
-    PING 192.168.105.234 (192.168.105.234) 56(84) bytes of data.
-    From 192.168.105.125 icmp_seq=1 Destination Host Unreachable
-    From 192.168.105.125 icmp_seq=2 Destination Host Unreachable
-    From 192.168.105.125 icmp_seq=3 Destination Host Unreachable
-
-    --- 192.168.105.234 ping statistics ---
-    3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2045ms
+        --- 192.168.105.234 ping statistics ---
+        3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2045ms
 
 ![ARP Broadcast Request](img/wireshark-arp-broadcast.png)
 
@@ -42,16 +41,15 @@ Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse
 
 4.  Wiederholen Sie Schritt 3 mit einem Gerät in Ihrem Netzwerk (bspw. Smartphone, TV, Musikanlage, NAS etc.):
 
+        ping -c 3 192.168.105.53
+        PING 192.168.105.53 (192.168.105.53) 56(84) bytes of data.
+        64 bytes from 192.168.105.53: icmp_seq=1 ttl=64 time=4.36 ms
+        64 bytes from 192.168.105.53: icmp_seq=2 ttl=64 time=2.83 ms
+        64 bytes from 192.168.105.53: icmp_seq=3 ttl=64 time=1.23 ms
 
-    ping -c 3 192.168.105.53
-    PING 192.168.105.53 (192.168.105.53) 56(84) bytes of data.
-    64 bytes from 192.168.105.53: icmp_seq=1 ttl=64 time=4.36 ms
-    64 bytes from 192.168.105.53: icmp_seq=2 ttl=64 time=2.83 ms
-    64 bytes from 192.168.105.53: icmp_seq=3 ttl=64 time=1.23 ms
-
-    --- 192.168.105.53 ping statistics ---
-    3 packets transmitted, 3 received, 0% packet loss, time 2003ms
-    rtt min/avg/max/mdev = 1.234/2.805/4.355/1.274 ms
+        --- 192.168.105.53 ping statistics ---
+        3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+        rtt min/avg/max/mdev = 1.234/2.805/4.355/1.274 ms
 
 ![ARP Broadcast Request](img/wireshark-arp-icmp-echo-request.png)
 
@@ -65,16 +63,15 @@ Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse
 
 5.  Wiederholen Sie Schritt 3 mit einem Host im Internet:
 
+        ping -4 -c 3 hackingexposed.ch
+        PING  (185.183.157.23) 56(84) bytes of data.
+        64 bytes from ramses3.addere.ch (185.183.157.23): icmp_seq=1 ttl=49 time=11.3 ms
+        64 bytes from ramses3.addere.ch (185.183.157.23): icmp_seq=2 ttl=49 time=13.1 ms
+        64 bytes from ramses3.addere.ch (185.183.157.23): icmp_seq=3 ttl=49 time=12.7 ms
 
-    ping -4 -c 3 hackingexposed.ch
-    PING  (185.183.157.23) 56(84) bytes of data.
-    64 bytes from ramses3.addere.ch (185.183.157.23): icmp_seq=1 ttl=49 time=11.3 ms
-    64 bytes from ramses3.addere.ch (185.183.157.23): icmp_seq=2 ttl=49 time=13.1 ms
-    64 bytes from ramses3.addere.ch (185.183.157.23): icmp_seq=3 ttl=49 time=12.7 ms
-
-    ---  ping statistics ---
-    3 packets transmitted, 3 received, 0% packet loss, time 2003ms
-    rtt min/avg/max/mdev = 11.273/12.337/13.074/0.770 ms
+        ---  ping statistics ---
+        3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+        rtt min/avg/max/mdev = 11.273/12.337/13.074/0.770 ms
 
 ![ARP Broadcast Request](img/wireshark-icmp-echo-request.png)
 
