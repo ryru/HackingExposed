@@ -92,7 +92,7 @@ Alle Antworten per [Mail](mailto:pascal.knecht@juventus.schule?subject=[Lab]%20A
 
 1.  In Aufgabe 3 werden drei ARP Pakete verschickt aber keine ICMP (Ping) Pakete. Wieso?
 
-2.  Stimmt in Aufgabe 4 die Sourc MAC Adresse mit der Antwort im ARP Response Paket überein?
+2.  Stimmt in Aufgabe 4 die Source MAC Adresse mit der Antwort im ARP Response Paket überein?
 
 3.  Wieso gibt es in Aufgabe 5 keinen neuen Eintrag für die IP Adresse `185.183.157.23` in der ARP Tabelle?
 
