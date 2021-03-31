@@ -45,12 +45,11 @@ Alle Konfigurationen betreffen Ihre Kali VM, weder Host noch Default Gateway mü
 
 1.  Starten Sie auf Ihrem Host System ein Ping auf `hackingexposed.ch`. Ziel dieses Labs ist es, diese Pings in der Kali VM zu sehen. Prüfen Sie auch Ihre aktuelle ARP Tabelle Ihres Host Systems. Diese könnte etwa so aussehen:
 
+        arp -n
+        Address                  HWtype  HWaddress           Flags Mask            Iface
+        DG.IP                    ether   DG.MAC              C                     eth0
 
-    arp -n
-    Address                  HWtype  HWaddress           Flags Mask            Iface
-    DG.IP                    ether   DG.MAC              C                     eth0
-
-Die ARP Tabelle in Kali sieht identisch aus.
+    Die ARP Tabelle in Kali sieht identisch aus.
 
 2.  In diesem Setup fungiert die Kali VM als Router, Pakete mit Destination und Source IP Adresse ungleich jener der VM kommen an und müssen weitergeleitet werden. Damit Linux diese Pakete nicht verwirft sondern weiterleitet, muss `ip_forward` aktiviert sein, also den Wert `1` enthalten. Sie können das mittels `cat /proc/sys/net/ipv4/ip_forward` prüfen. Sollte der Wert gleich `0` sein, können Sie diesen mit dem Befehl `sudo echo 1 > /proc/sys/net/ipv4/ip_forward` auf `1` setzen.
 
@@ -58,7 +57,7 @@ Die ARP Tabelle in Kali sieht identisch aus.
 
 4.  Starten Sie Ettercap (Start > 09 - Sniffing & Spoofing > ettercap-graphical), geben Sie das Passwort Ihres Users ein und **deaktivieren** Sie _Sniffing at startup_ und akzeptieren Sie die Einstellungen mit dem Haken oben rechts.
 
-![](img/ettercap-startup.png)
+    ![](img/ettercap-startup.png)
 
 5.  Halten Sie Wireshark im Auge, während Sie _Scan for Hosts_ über das Lupensymbol starten.
 
@@ -68,51 +67,51 @@ Die ARP Tabelle in Kali sieht identisch aus.
 
 8.  Wählen Sie nun über das Weltsymbol _MITM Menu_ den Eintrag _ARP Poisoning_ und OK. Nun sollten Sie in Wireshark die Ping Echo-Request und Response Ihres Host Systems sehen.
 
-![ICMP Echo Request und Response](img/icmp-messages.png)
+    ![ICMP Echo Request und Response](img/icmp-messages.png)
 
-Ausserdem sehen Sie nun vermehrt ARP Pakete.
+    Ausserdem sehen Sie nun vermehrt ARP Pakete.
 
-![ARP Pakete nach Spoofing](img/arp-spoofing.png)
+    ![ARP Pakete nach Spoofing](img/arp-spoofing.png)
 
-Die ARP Tabelle Ihres Host Systems könnte nun wie folgt aussehen:
+    Die ARP Tabelle Ihres Host Systems könnte nun wie folgt aussehen:
 
-    arp -n
-    Address                  HWtype  HWaddress           Flags Mask            Iface
-    DG.IP                    ether   KALI.MAC            C                     eth0
-    KALI.IP                  ether   KALI.MAC            C                     eth0
+        arp -n
+        Address                  HWtype  HWaddress           Flags Mask            Iface
+        DG.IP                    ether   KALI.MAC            C                     eth0
+        KALI.IP                  ether   KALI.MAC            C                     eth0
 
-Die ARP Tabelle Ihrer Kali VM könnte nun wie folgt aussehen:
+    Die ARP Tabelle Ihrer Kali VM könnte nun wie folgt aussehen:
 
-    arp -n
-    Address                  HWtype  HWaddress           Flags Mask            Iface
-    HOST.IP                  ether   HOST.MAC            C                     eth0
-    DG.IP                    ether   DG.MAC              C                     eth0
+        arp -n
+        Address                  HWtype  HWaddress           Flags Mask            Iface
+        HOST.IP                  ether   HOST.MAC            C                     eth0
+        DG.IP                    ether   DG.MAC              C                     eth0
 
 9.  Öffnen Sie in einem Browser auf Ihrem Host System die Website `http://neverssl.com/`.
 
 10. Wenn Sie in Wireshark in Ihrer Kali VM mittels des Display Filters `http` filtern, sehen Sie die HTTP Kommunikation von Ihrem Host System zum Webserver im Internet.
 
-![HTTP Kommunikation](img/http-communication.png)
+    ![HTTP Kommunikation](img/http-communication.png)
 
 11. Beenden Sie die MITM Attacke über das Stopsymbol _Stop MITM_ in Ethercap und halten Sie ein Auge auf die ARP Pakete in Wireshark, während Sie die Attacke stoppen.
 
-![ARP Depoisoning](img/arp-depoisoning.png)
+    ![ARP Depoisoning](img/arp-depoisoning.png)
 
 12. Prüfen Sie nun die ARP Tabellen in Ihrem Host System und in Kali erneut.
 
-Die ARP Tabelle Ihres Host Systems könnte nun wie folgt aussehen:
+    Die ARP Tabelle Ihres Host Systems könnte nun wie folgt aussehen:
 
-    arp -n
-    Address                  HWtype  HWaddress           Flags Mask            Iface
-    DG.IP                    ether   DG.MAC              C                     eth0
-    KALI.IP                  ether   KALI.MAC            C                     eth0
+        arp -n
+        Address                  HWtype  HWaddress           Flags Mask            Iface
+        DG.IP                    ether   DG.MAC              C                     eth0
+        KALI.IP                  ether   KALI.MAC            C                     eth0
 
-Die ARP Tabelle Ihrer Kali VM könnte nun wie folgt aussehen:
+    Die ARP Tabelle Ihrer Kali VM könnte nun wie folgt aussehen:
 
-    arp -n
-    Address                  HWtype  HWaddress           Flags Mask            Iface
-    HOST.IP                  ether   HOST.MAC            C                     eth0
-    DG.IP                    ether   DG.MAC              C                     eth0
+        arp -n
+        Address                  HWtype  HWaddress           Flags Mask            Iface
+        HOST.IP                  ether   HOST.MAC            C                     eth0
+        DG.IP                    ether   DG.MAC              C                     eth0
 
 ## Fragen
 
