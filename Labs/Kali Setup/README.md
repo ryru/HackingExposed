@@ -17,7 +17,7 @@
 
 3.  Stellen Sie die Netzwerkeinstellung Ihres Netzwerkadapters von `NAT` auf `Bridged Adapter` um, sodass Sie im Kali Linux Gastsystem eine IP Adresse Ihres lokalen DHCP Server erhalten.
 
-![Netzwerk Adapter Bridged](img/Virtualbox-Network-Bridge-Adapter-Setting.png)
+    ![Netzwerk Adapter Bridged](img/Virtualbox-Network-Bridge-Adapter-Setting.png)
 
 4.  Lesen Sie die Datei `livecd.(pdf|md)` auf dem Desktop.
 

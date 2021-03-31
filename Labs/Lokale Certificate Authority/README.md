@@ -4,10 +4,9 @@
 -   Schwierigkeitsgrad: 🌶🌶🌶️
 -   Beschreibung: In diesem Lab festigen Sie Ihr Verständnis des Aufbaus einer Certificate Authority respektive einer Chain of Trust, indem Sie eine eigene CA-Struktur aufbauen und in einem Webserver konfigurieren.
 
-
-    Root CA
-    └── Sub CA
-        └── hackingexposed.local
+        Root CA
+        └── Sub CA
+            └── hackingexposed.local
 
 ## Voraussetzung & Vorbereitung
 
@@ -28,7 +27,7 @@
         ff02::1 ip6-allnodes
         ff02::2 ip6-allrouters
 
-  Verifizieren Sie die Korrektheit Ihres Eintrages mit einem Ping:
+    Verifizieren Sie die Korrektheit Ihres Eintrages mit einem Ping:
 
         ping -c 3 hackingexposed.local
         PING hackingexposed.local (127.0.0.1) 56(84) bytes of data.
@@ -85,7 +84,7 @@
 
 11. Erstellen Sie nun anhand Ihres Server CSR aus Aufgabe 6 ein Server Zertifikat mit `openssl ca -config sub-ca.conf -in server/server.csr -out server/server.crt -extensions server_ext`. Überprüfen Sie den Inhalt unter _Issuer_, _Validity_ und _Subject_. Wenn alles in Ordnung ist, bestätigen Sie zwei Mal mit `y`.
 
-  Die Ordnerstruktur sollte wie folgt aussehen:
+    Die Ordnerstruktur sollte wie folgt aussehen:
 
         tree
         .
@@ -126,9 +125,9 @@
 
 15. Öffnen Sie nun mit Firefox die Webseite `https://hackingexposed.local`. Sie sollten die Apache2 Default-Site über einen TLS verschlüsselten Kanal sehen. Prüfen Sie das Zertifikat und die Trust-Chain.
 
-  ![Firefox Website verified](img/firefox-verified.png)
+    ![Firefox Website verified](img/firefox-verified.png)
 
-  ![Firefox Trust Chain](img/firefox-trust-chain.png)
+    ![Firefox Trust Chain](img/firefox-trust-chain.png)
 
 16. Nachdem Sie alle Fragen beantwortet haben, können Sie mit dem Skript `sudo clean-up.sh` Ihre Konfiguration rückgängig machen.
 

@@ -12,7 +12,6 @@
 
 1.  Öffnen Sie ein non-root Terminal (Alt + Enter) und schauen Sie mit `arp -n` die aktuelle ARP Tabelle an. Die Ausgabe sollte mindestens Ihr Default Gateway enthalten und etwa so ähnlich aussehen:
 
-
     arp -n
     Address                  HWtype  HWaddress           Flags Mask            Iface
     192.168.105.1            ether   d8:58:d7:00:8f:ca   C                     eth0
@@ -30,14 +29,14 @@
         --- 192.168.105.234 ping statistics ---
         3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2045ms
 
-![ARP Broadcast Request](img/wireshark-arp-broadcast.png)
+    ![ARP Broadcast Request](img/wireshark-arp-broadcast.png)
 
-Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse:
+    Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse:
 
-    arp -n
-    Address                  HWtype  HWaddress           Flags Mask            Iface
-    192.168.105.234                  (incomplete)                              eth0
-    192.168.105.1            ether   d8:58:d7:00:8f:ca   C                     eth0
+        arp -n
+        Address                  HWtype  HWaddress           Flags Mask            Iface
+        192.168.105.234                  (incomplete)                              eth0
+        192.168.105.1            ether   d8:58:d7:00:8f:ca   C                     eth0
 
 4.  Wiederholen Sie Schritt 3 mit einem Gerät in Ihrem Netzwerk (bspw. Smartphone, TV, Musikanlage, NAS etc.):
 
@@ -51,15 +50,15 @@ Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse
         3 packets transmitted, 3 received, 0% packet loss, time 2003ms
         rtt min/avg/max/mdev = 1.234/2.805/4.355/1.274 ms
 
-![ARP Broadcast Request](img/wireshark-arp-icmp-echo-request.png)
+    ![ARP Broadcast Request](img/wireshark-arp-icmp-echo-request.png)
 
-Der Befehl `arp -n` zeigt nun einen neuen Eintrag für diese IP Adresse:
+    Der Befehl `arp -n` zeigt nun einen neuen Eintrag für diese IP Adresse:
 
-    arp -n
-    Address                  HWtype  HWaddress           Flags Mask            Iface
-    192.168.105.53           ether   f2:c2:f4:12:ef:d8   C                     eth0
-    192.168.105.234                  (incomplete)                              eth0
-    192.168.105.1            ether   d8:58:d7:00:8f:ca   C                     eth0
+        arp -n
+        Address                  HWtype  HWaddress           Flags Mask            Iface
+        192.168.105.53           ether   f2:c2:f4:12:ef:d8   C                     eth0
+        192.168.105.234                  (incomplete)                              eth0
+        192.168.105.1            ether   d8:58:d7:00:8f:ca   C                     eth0
 
 5.  Wiederholen Sie Schritt 3 mit einem Host im Internet:
 
@@ -73,15 +72,16 @@ Der Befehl `arp -n` zeigt nun einen neuen Eintrag für diese IP Adresse:
         3 packets transmitted, 3 received, 0% packet loss, time 2003ms
         rtt min/avg/max/mdev = 11.273/12.337/13.074/0.770 ms
 
-![ARP Broadcast Request](img/wireshark-icmp-echo-request.png)
+    ![ARP Broadcast Request](img/wireshark-icmp-echo-request.png)
 
-Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse:
+    Der Befehl `arp -n` hat nun einen unvollständigen Eintrag für diese IP Adresse:
 
-    arp -n
-    Address                  HWtype  HWaddress           Flags Mask            Iface
-    192.168.105.53           ether   f2:c2:f4:12:ef:d8   C                     eth0
-    192.168.105.234                  (incomplete)                              eth0
-    192.168.105.1            ether   d8:58:d7:00:8f:ca   C                     eth0
+        arp -n
+        Address                  HWtype  HWaddress           Flags Mask            Iface
+        192.168.105.53           ether   f2:c2:f4:12:ef:d8   C                     eth0
+        192.168.105.234                  (incomplete)                              eth0
+        192.168.105.1            ether   d8:58:d7:00:8f:ca   C                     eth0
+
 
 ## Fragen
 
