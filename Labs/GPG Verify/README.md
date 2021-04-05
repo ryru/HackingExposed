@@ -62,8 +62,7 @@
 
 8.  Erstellen Sie nun eine Datei mit dem Namen `secret-message.txt` und fügen Sie folgendes Zitat von [Marie Curie](https://de.wikiquote.org/wiki/Marie_Curie) ein:
 
-
-    Sie müssen Ihr Talent entdecken und benutzen. Sie müssen herausfinden, wo Ihre Stärke liegt. Haben Sie den Mut, mit Ihrem Kopf zu denken. Das wird Ihr Selbstvertrauen und Ihre Kräfte verdoppeln.
+        Sie müssen Ihr Talent entdecken und benutzen. Sie müssen herausfinden, wo Ihre Stärke liegt. Haben Sie den Mut, mit Ihrem Kopf zu denken. Das wird Ihr Selbstvertrauen und Ihre Kräfte verdoppeln.
 
     Verschlüsseln Sie nun diese Nachricht mit dem Befehl: `gpg -e -r web@addere.ch secret-message.txt`. Bestätigen Sie die Warnung mit 'y'.
 
