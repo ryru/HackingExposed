@@ -30,6 +30,10 @@ Sie arbeiten die Labs selbstständig durch. Alle Labs beinhalten Fragen, die Sie
 -   [Lab 12: TLS Decryption](TLS%20Decryption/)
 -   [Lab 13: Lokale Certificate Authority](Lokale%20Certificate%20Authority/)
 
+## HE5: Web Security I
+
+-   [Lab 14: Cross Site Scripting](Cross%20Site%20Scripting/)
+
 ## Bewertung, Benotung und Abgabedatum
 
 Alle Labs müssen bis spätestens zwei Wochen nach dem letzten Vorlesungsabend (HE6) abgegeben werden. Empfehlenswert ist eine Vorlesungszeitnahe Abgabe.
