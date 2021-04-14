@@ -34,6 +34,11 @@ Sie arbeiten die Labs selbstständig durch. Alle Labs beinhalten Fragen, die Sie
 
 -   [Lab 14: Cross Site Scripting](Cross%20Site%20Scripting/)
 
+## HE6: Web Security II
+
+-   [Lab 15: Cross Site Request Forgeries](Cross%20Site%20Request%20Forgeries/)
+-   [Lab 16: SQL Injection](SQL%20Injection/)
+
 ## Bewertung, Benotung und Abgabedatum
 
 Alle Labs müssen bis spätestens zwei Wochen nach dem letzten Vorlesungsabend (HE6) abgegeben werden. Empfehlenswert ist eine Vorlesungszeitnahe Abgabe.
