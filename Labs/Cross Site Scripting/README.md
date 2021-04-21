@@ -52,7 +52,7 @@ Alle Antworten per [Mail](mailto:pascal.knecht@juventus.schule?subject=[Lab]%20C
 
 4.  [Lektion 11](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/CrossSiteScripting.lesson/10): Wie kann diese Schwachstelle ausgenutzt werden? Verlangt ist eine funktionierende URL mit dem Exploit.
 
-5.  [Lektion 12](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/CrossSiteScripting.lesson/11): Beantworten Sie die Fragen. Schicken Sie in Ihrem Mail einen Screenshot des _Report card_, auf welchem ersichtilch ist, dass Sie das XSS Lab erfolgreich abgeschlossen haben.
+5.  [Lektion 12](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/CrossSiteScripting.lesson/11): Beantworten Sie die Fragen. Schicken Sie in Ihrem Mail einen Screenshot des _Report card_, auf welchem ersichtlich ist, dass Sie das XSS Lab erfolgreich abgeschlossen haben.
 
     Ein Beispiel Screenshot:
 
