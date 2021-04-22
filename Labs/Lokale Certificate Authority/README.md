@@ -119,9 +119,10 @@
 
 12. Importieren Sie nun das Root Zertifikat `root-ca.crt` in den Trusted Store von Firefox (Preferences > Privacy & Security > View Certificates > Authorities > Import). Achten Sie darauf, dass Sie _Trust this CA to identify websites_ setzen.
 
-13. Erstellen Sie unter `/etc/apache2/sites-enabled/` eine Datei mit dem Namen `hackingexposed.ch.conf` und kopieren Sie den Inhalt aus `res/hackingexposed.ch.conf` in diese Datei.
+13. Erstellen Sie mit root Rechten unter `/etc/apache2/sites-enabled/` eine Datei mit dem Namen `hackingexposed.ch.conf` und kopieren Sie den Inhalt aus `res/hackingexposed.ch.conf` in diese Datei.
+    Alternative können Sie die Datei auch mit diesem Befehl kopieren `sudo cp res/hackingexposed.ch.conf /etc/apache2/sites-enabled/`.
 
-14. Starten Sie Apache2 mittels `sudo systemctl restart apache2.service` neu.
+14. Starten Sie Apache2 mittels `sudo systemctl restart apache2.service` neu. Prüfen Sie mit dem Status-Befehl `sudo systemctl status apache2.service`, dass der Service sauber läuft.
 
 15. Öffnen Sie nun mit Firefox die Webseite `https://hackingexposed.local`. Sie sollten die Apache2 Default-Site über einen TLS verschlüsselten Kanal sehen. Prüfen Sie das Zertifikat und die Trust-Chain.
 
