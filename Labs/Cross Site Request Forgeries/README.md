@@ -44,7 +44,7 @@ Alle Antworten per [Mail](mailto:pascal.knecht@juventus.schule?subject=[Lab]%20C
 
 3.  [Lektion 7](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/CSRF.lesson/6): Mit welchem Exploit haben Sie diese Aufgabe gelöst? Erwartet wird HTML.
 
-4.  [Lektion 8](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/CSRF.lesson/7): Schicken Sie in Ihrem Mail einen Screenshot des _Report card_, auf welchem ersichtlich ist, dass Sie das CSRF Lab erfolgreich abgeschlossen haben.
+4.  [Lektion 8](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/CSRF.lesson/7): Hier wird ein Screenshot der gelösten Aufgabe mit dem Text _Congratulations, now log out and login with your normal user account within WebGoat, remember the attacker knows you solved this assignment_ erwartet. Schicken Sie in Ihrem Mail auch einen Screenshot des _Report card_, auf welchem ersichtlich ist, dass Sie das CSRF Lab erfolgreich abgeschlossen haben.
 
     Ein Beispiel Screenshot:
 
