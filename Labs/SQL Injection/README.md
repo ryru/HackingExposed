@@ -54,7 +54,7 @@ Alle Antworten per [Mail](mailto:pascal.knecht@juventus.schule?subject=[Lab]%20S
 
 8.  [Lektion 12](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/11): Mit welcher Eingabe lösen Sie diese Aufgabe?
 
-9.  [Lektion 12](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/12): Mit welcher Eingabe lösen Sie diese Aufgabe?
+9.  [Lektion 13](http://127.0.0.1:8080/WebGoat/start.mvc#lesson/SqlInjection.lesson/12): Mit welcher Eingabe lösen Sie diese Aufgabe?
 
     Schicken Sie in Ihrem Mail einen Screenshot des _Report card_, auf welchem ersichtlich ist, dass Sie das SQL Injection Lab erfolgreich abgeschlossen haben.
 
