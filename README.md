@@ -8,6 +8,8 @@ Unterlagen:
 
 -   Slides mit den Video-Links auf YouTube und die theoretischen Übungsblätter auf [OpenOLAT](https://lernen.juvecampus.ch) im aktuellen Kurs «Hacking Exposed»
 
+-   Zusätzlich sind alle [Videos](Videos/) in diesem Repo verlinkt.
+
 ## Wichtiger Hinweis
 
 The following text is also available in English, see section _Important Note_.
