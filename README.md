@@ -10,6 +10,8 @@ Unterlagen:
 
 -   Zusätzlich sind alle [Videos](Videos/) in diesem Repo verlinkt.
 
+-   Alle PDF [Slides](Slides/) mit den Theoriefolien.
+
 ## Wichtiger Hinweis
 
 The following text is also available in English, see section _Important Note_.
