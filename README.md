@@ -31,3 +31,7 @@ The following text is also available in English, see section _Important Note_.
 -   The knowledge imparted in the Hacking Exposed lecture should help learners to consider information security aspects in their own projects and environments.
 
 -   The Hacking Exposed lecture is by no means to be understood as an incitement to hacking.
+
+## Lizenz / License
+
+![CC BY-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)
