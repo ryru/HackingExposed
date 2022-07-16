@@ -1,12 +1,39 @@
 # Modul Hacking Exposed
 
-Unterrichtsunterlagen zum Modul Hacking Exposed im Studiengang Informatik an der [HF Juventus](https://www.juventus.ch/technik/) in Zürich.
+Unterrichtsunterlagen zum Modul Hacking Exposed im Studiengang Informatik an der [HF Juventus](https://www.juventus.ch/technik/) in Zürich von 2018 bis 2023.
 
-Unterlagen:
+## Themen
+
+-   Network Security
+    -   Perimeter Security Massnahmen
+    -   Firewalling Grundidee
+    -   Firewalling mit Netfilter und Iptables
+    -   Port Scanning
+    -   Network Scanning
+    -   Machine-In-The-Middle Attacke
+    -   ARP-Spoofing
+    -   DNS-Spoofing
+    -   Abwehrmassnahmen
+-   Kryptographie
+    -   Passwörter
+    -   Kryptographische Stärke messen
+    -   Kryptographische Grundlagen (Symmetrische Verschlüsselung, Hash-Funktionen, Asymmetrische Verschlüsselung, Digitale Signaturen)
+    -   TLS Grundlagen, Funktionsweise und Anwendungszwecke
+    -   Internet Public Key Infrastructure
+-   Web Security
+    -   Same Origin Policy (SOP)
+    -   Content Security Policy (CSP)
+    -   Cross Site Scripting (XSS)
+    -   OWASP Top 10
+    -   Cross-Origin Resource Sharing (CORS)
+    -   Cross-Site Request Forgery (CSRF)
+    -   SQL-Injection
+-   Bonus
+    -   OpenSSL Heartbleed
+
+## Unterlagen:
 
 -   Praktische IT-Security [Labs](Labs/) auf GitHub
-
--   Slides mit den Video-Links auf YouTube und die theoretischen Übungsblätter auf [OpenOLAT](https://lernen.juvecampus.ch) im aktuellen Kurs «Hacking Exposed»
 
 -   Zusätzlich sind alle [Videos](Videos/) in diesem Repo verlinkt.
 
