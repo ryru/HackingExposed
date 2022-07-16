@@ -1,6 +1,10 @@
 # Videos
 
+Total Video Material: 5:49 hours
+
 ## HE1: Perimeter Security
+
+Total Video Material HE1: 51:37 Min
 
 -   [HE1 0 Überblick](https://www.youtube.com/watch?v=mLrYxoQi_ZQ) (02:13 Min)
 -   [HE1 1 Perimeter Security Massnahmen](https://www.youtube.com/watch?v=4fQifO-CbWc) (12:45 Min)
@@ -10,6 +14,8 @@
 
 ## HE2: LAN-Security
 
+Total Video Material HE2: 41:36 Min
+
 -   [HE2 0 Überblick](https://www.youtube.com/watch?v=fCuTuUaKpXc) (03:03 Min)
 -   [HE2 1 Network Scanning](https://www.youtube.com/watch?v=f7ZEQkLnK5U) (04:24 Min)
 -   [HE2 2 MITM Attacke](https://www.youtube.com/watch?v=IdKLyNi8pJc) (01:51 Min)
@@ -18,6 +24,8 @@
 -   [HE2 5 Abwehrmassnamen](https://www.youtube.com/watch?v=LOcP0VkotIw) (02:41 Min)
 
 ## HE3: Kryptographische Grundlagen
+
+Total Video Material HE3: 56:41 Min
 
 -   [HE3 0 Überblick](https://www.youtube.com/watch?v=ErPRYG3NAx4) (03:36 Min)
 -   [HE3 1 Passwörter](https://www.youtube.com/watch?v=gfGs_oDX93o) (15:19 Min)
@@ -30,11 +38,15 @@
 
 ## HE4: TLS & Internet PKI
 
+Total Video Material HE4: 1:16 hours
+
 -   [HE4 0 Überblick](https://www.youtube.com/watch?v=rwQGS1dL5zY) (01:32 Min)
 -   [HE4 1 TLS](https://www.youtube.com/watch?v=G0rH6rUkHQY) (36:35 Min)
 -   [HE4 2 Internet PKI](https://www.youtube.com/watch?v=OrS9we04zEc) (38:32 Min)
 
 ## HE5: Websecurity I
+
+Total Video Material HE5: 51:52 Min
 
 -   [HE5 0 Überblick](https://www.youtube.com/watch?v=jVBs-78p9-4) \[07:23 Min)
 -   [HE5 1 SOP](https://www.youtube.com/watch?v=H5-4U14gD9k) \[07:24 Min)
@@ -45,6 +57,8 @@
 -   [HE5 XSS Stored Demo](https://www.youtube.com/watch?v=FZw4Za5i8GE) (03:28 Min)
 
 ## HE6: Websecurity II
+
+Total Video Material HE5: 1:10 hours
 
 -   [HE6 0 Überblick](https://www.youtube.com/watch?v=pgtynm-TgVY) (02:22 Min)
 -   [HE6 1 OWASP Top 10](https://www.youtube.com/watch?v=A9xyPJoRJzo) (06:03 Min)
